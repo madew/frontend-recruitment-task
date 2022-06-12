@@ -1,0 +1,21 @@
+.section {
+    margin: 0 auto;
+    padding: 96px 230px 0 230px;
+
+    max-width: 1440px;
+    display: flex;
+    flex-direction: row;
+    
+    &__image-wrap {
+        flex-grow: 1;
+    }
+
+    &__image {
+        max-width: 505px;
+    }
+
+    &__text-wrap {
+        flex-grow: 1;
+        margin-left: 95px;
+    }
+}
