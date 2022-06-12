@@ -18,4 +18,33 @@
         flex-grow: 1;
         margin-left: 95px;
     }
+
+    &__header {
+        margin-top: 30px;
+
+        font-family: $h1-font;
+        font-size: 2.625rem;
+        font-weight: 700;
+        line-height: 50.5px;
+    }
+
+    &__text {
+        margin-top: 24px;
+
+        font-family: $text-font;
+        font-size: 1rem;
+        font-weight: 300;
+        line-height: 1.5rem;
+    }
+
+    &__btn {
+        margin-top: 32px;
+        padding: 16px 40px;
+
+        color: $text-white;
+        background-color: $primary-color;
+        font-family: $text-color;
+        font-size: 1rem;
+        font-weight: 700;
+    }
 }

@@ -1,12 +1,26 @@
+// imports
 @import 'variables';
 @import 'mixins';
 @import 'section';
 
+
+// global
 *{
     box-sizing: border-box;
 }
 
-body {
+body,
+h1,
+p {
     padding: 0;
     margin: 0;
+}
+
+.btn {
+    border: none;
+    cursor: pointer;
+
+    &--round {
+        border-radius: 32px;
+    }
 }

@@ -28,13 +28,50 @@
   margin-left: 95px;
 }
 
+.section__header {
+  margin-top: 30px;
+  font-family: "Roboto", sans-serif;
+  font-size: 2.625rem;
+  font-weight: 700;
+  line-height: 50.5px;
+}
+
+.section__text {
+  margin-top: 24px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5rem;
+}
+
+.section__btn {
+  margin-top: 32px;
+  padding: 16px 40px;
+  color: #fff;
+  background-color: #E4C1AE;
+  font-family: #121212;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-body {
+body,
+h1,
+p {
   padding: 0;
   margin: 0;
+}
+
+.btn {
+  border: none;
+  cursor: pointer;
+}
+
+.btn--round {
+  border-radius: 32px;
 }
 /*# sourceMappingURL=main.css.map */
