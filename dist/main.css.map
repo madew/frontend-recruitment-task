@@ -1,9 +1,10 @@
 {
     "version": 3,
-    "mappings": "AAEA,AAAA,CAAC,CAAA;EACG,UAAU,EAAE,UAAU;CACzB;;AAED,AAAA,IAAI,CAAC;EACD,OAAO,EAAE,CAAC;EACV,MAAM,EAAE,CAAC;CACZ",
+    "mappings": "AAGA,AAAA,CAAC,CAAA;EACG,UAAU,EAAE,UAAU;CACzB;;AAED,AAAA,IAAI,CAAC;EACD,OAAO,EAAE,CAAC;EACV,MAAM,EAAE,CAAC;CACZ",
     "sources": [
         "../src/scss/main.scss",
-        "../src/scss/_variables.scss"
+        "../src/scss/_variables.scss",
+        "../src/scss/_mixins.scss"
     ],
     "names": [],
     "file": "main.css"
