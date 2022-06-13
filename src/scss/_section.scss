@@ -1,22 +1,59 @@
 .section {
-    margin: 0 auto;
-    padding: 96px 230px 0 230px;
-
-    max-width: 1440px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    padding: 48px 0;
+
+    @include atSmall {
+        padding: 48px 12px;
+    }
+
+    @include atMedium {
+        flex-direction: row;
+        padding: 48px 24px;
+    }
+
+    @include atLarge {
+        padding: 64px 96px;
+    }
+    
+    @include atXLarge {   
+        flex-direction: row;
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 96px 230px;
+    }
     
     &__image-wrap {
-        flex-grow: 1;
+        display: flex;
+
+        @include atMedium {
+            flex: 1.5;
+        }
     }
 
     &__image {
-        max-width: 505px;
+        width: 100%;
+        object-fit: cover;      
+
+        @include atXLarge {
+            width: 505px;
+        }
     }
 
     &__text-wrap {
-        flex-grow: 1;
-        margin-left: 95px;
+        margin: 0 12px;
+
+        @include atMedium {
+            flex: 2;
+        }
+
+        @include atLarge {
+            padding-left: 48px;
+        }
+        
+        @include atXLarge {
+            padding-left: 95px;
+        }
     }
 
     &__header {
@@ -26,6 +63,10 @@
         font-size: 2.625rem;
         font-weight: 700;
         line-height: 50.5px;
+
+        @include atMedium {
+            margin-top :0;
+        }
     }
 
     &__text {
@@ -38,7 +79,8 @@
     }
 
     &__btn {
-        margin-top: 32px;
+        display: block;
+        margin: 32px auto;
         padding: 16px 40px;
 
         color: $text-white;
@@ -46,5 +88,14 @@
         font-family: $text-color;
         font-size: 1rem;
         font-weight: 700;
+
+        @include atMedium {
+            display: inline-block;
+        }
+        
+        @include atXLarge {
+            display: inline-block;
+            margin-top: 32px;
+        }
     }
 }

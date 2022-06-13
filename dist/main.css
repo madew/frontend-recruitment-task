@@ -1,31 +1,96 @@
 .section {
-  margin: 0 auto;
-  padding: 96px 230px 0 230px;
-  max-width: 1440px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 48px 0;
+}
+
+@media (min-width: 400px) {
+  .section {
+    padding: 48px 12px;
+  }
+}
+
+@media (min-width: 750px) {
+  .section {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 48px 24px;
+  }
+}
+
+@media (min-width: 1010px) {
+  .section {
+    padding: 64px 96px;
+  }
+}
+
+@media (min-width: 1324px) {
+  .section {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 96px 230px;
+  }
 }
 
 .section__image-wrap {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (min-width: 750px) {
+  .section__image-wrap {
+    -webkit-box-flex: 1.5;
+        -ms-flex: 1.5;
+            flex: 1.5;
+  }
 }
 
 .section__image {
-  max-width: 505px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (min-width: 1324px) {
+  .section__image {
+    width: 505px;
+  }
 }
 
 .section__text-wrap {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  margin-left: 95px;
+  margin: 0 12px;
+}
+
+@media (min-width: 750px) {
+  .section__text-wrap {
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
+  }
+}
+
+@media (min-width: 1010px) {
+  .section__text-wrap {
+    padding-left: 48px;
+  }
+}
+
+@media (min-width: 1324px) {
+  .section__text-wrap {
+    padding-left: 95px;
+  }
 }
 
 .section__header {
@@ -34,6 +99,12 @@
   font-size: 2.625rem;
   font-weight: 700;
   line-height: 50.5px;
+}
+
+@media (min-width: 750px) {
+  .section__header {
+    margin-top: 0;
+  }
 }
 
 .section__text {
@@ -45,13 +116,27 @@
 }
 
 .section__btn {
-  margin-top: 32px;
+  display: block;
+  margin: 32px auto;
   padding: 16px 40px;
   color: #fff;
   background-color: #E4C1AE;
   font-family: #121212;
   font-size: 1rem;
   font-weight: 700;
+}
+
+@media (min-width: 750px) {
+  .section__btn {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 1324px) {
+  .section__btn {
+    display: inline-block;
+    margin-top: 32px;
+  }
 }
 
 * {
