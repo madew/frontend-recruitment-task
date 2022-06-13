@@ -2,6 +2,7 @@
 @import 'variables';
 @import 'mixins';
 @import 'section';
+@import 'popup';
 
 
 // global
@@ -16,6 +17,20 @@ p {
     margin: 0;
 }
 
+h1 {
+    font-family: $h1-font;
+    font-size: 2.625rem;
+    font-weight: 700;
+    line-height: 50.5px;
+}
+
+p {
+    font-family: $text-font;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.5rem;
+}
+
 .btn {
     border: none;
     cursor: pointer;
@@ -24,3 +39,4 @@ p {
         border-radius: 32px;
     }
 }
+
