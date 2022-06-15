@@ -75,13 +75,6 @@
     &__btn {
         display: block;
         margin: 32px auto;
-        padding: 16px 40px;
-
-        color: $text-white;
-        background-color: $primary-color;
-        font-family: $text-color;
-        font-size: 1rem;
-        font-weight: 700;
 
         @include atMedium {
             display: inline-block;
