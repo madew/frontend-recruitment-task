@@ -9,8 +9,8 @@ const resetBtn = document.querySelector('.popup__btn')
 
 
 // Counter
-let counter = loadFromLocalStorage('counter');
-counterEl.textContent = counter;
+counterEl.textContent = loadFromLocalStorage('counter');
+
 
 
 // Functions
@@ -23,7 +23,6 @@ function closePopup() {
 }
 
 function saveToLocalStorage(key, item) {
-    console.log(key, item)
     localStorage.setItem(key, JSON.stringify(item))
 }
 
@@ -39,12 +38,10 @@ document.addEventListener('click', (event)=> {
     
     if(event.target === resetBtn) {
         saveToLocalStorage('counter', 0);
-        counter = 0
-        counterEl.textContent = counter;
+        counterEl.textContent = loadFromLocalStorage('counter');
     } else {   
-        counter++;
-        saveToLocalStorage('counter', counter)
-        counterEl.textContent = counter;
+        saveToLocalStorage('counter', loadFromLocalStorage('counter') + 1)
+        counterEl.textContent = loadFromLocalStorage('counter');
     }
 })
 
