@@ -170,6 +170,10 @@
   border: none;
 }
 
+.popup__btn {
+  margin-top: 12px;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
