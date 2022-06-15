@@ -27,8 +27,6 @@ function loadFromLocalStorage(key) {
 }
 
 
-
-
 // Listeners
 document.addEventListener('click', ()=> {
     counter++;

@@ -172,7 +172,8 @@
   position: fixed;
   top: 46px;
   right: 46px;
-  cursor: pointer;
+  background: none;
+  border: none;
 }
 
 * {
