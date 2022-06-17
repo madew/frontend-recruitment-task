@@ -24,7 +24,6 @@ function saveToLocalStorage(key, item) {
 }
 
 function loadFromLocalStorage(key) {
-    console.log(JSON.parse(localStorage.getItem(key)))
    return JSON.parse(localStorage.getItem(key))
 }
 

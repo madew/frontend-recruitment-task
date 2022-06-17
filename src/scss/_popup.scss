@@ -16,10 +16,17 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width:75%;
         max-width: 960px;
-        padding: 56px 0 56px 96px;
+        width: 90%;
+        padding: 28px 14px;
         background-color: $white-color;
+        text-align: center;
+        
+        @include atMedium {
+            width:75%;
+            padding: 56px 0 56px 96px;
+            text-align: left;
+        }
     }
 
     &__text {
@@ -28,8 +35,8 @@
 
     &__close-icon {
         position: fixed;
-        top: 46px;
-        right: 46px;
+        top: 24px;
+        right: 24px;
         background: none;
         border: none;
     }
