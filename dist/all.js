@@ -6,20 +6,17 @@ const counterEl = document.getElementById('counter');
 const resetBtn = document.querySelector('.popup__btn')
 
 
-
-
-// Counter
+// Set counter element
 counterEl.textContent = loadFromLocalStorage('counter');
-
 
 
 // Functions
 function openPopup() {
-    popupEl.classList.add('popup__toggle');
+    popupEl.classList.remove('hide-element');
 }
 
 function closePopup() {
-    popupEl.classList.remove('popup__toggle');
+    popupEl.classList.add('hide-element');
 }
 
 function saveToLocalStorage(key, item) {
@@ -27,27 +24,29 @@ function saveToLocalStorage(key, item) {
 }
 
 function loadFromLocalStorage(key) {
+    console.log(JSON.parse(localStorage.getItem(key)))
    return JSON.parse(localStorage.getItem(key))
 }
 
 
-
 // Listeners
-
-document.addEventListener('click', (event)=> {
-    
-    if(event.target === resetBtn) {
-        saveToLocalStorage('counter', 0);
-        counterEl.textContent = loadFromLocalStorage('counter');
-    } else {   
-        saveToLocalStorage('counter', loadFromLocalStorage('counter') + 1)
-        counterEl.textContent = loadFromLocalStorage('counter');
-    }
+resetBtn.addEventListener('click', (event)=> {
+    saveToLocalStorage('counter', 0);
+    counterEl.textContent = loadFromLocalStorage('counter');
+    resetBtn.classList.add('hide-element')
 })
 
 
 btn.addEventListener('click', ()=> {
     openPopup();
+       
+    saveToLocalStorage('counter', loadFromLocalStorage('counter') + 1)
+    counterEl.textContent = loadFromLocalStorage('counter');
+    
+
+    if (loadFromLocalStorage('counter') > 5) {
+        resetBtn.classList.remove('hide-element')
+    }
 })
 
 closePopupBtn.addEventListener('click', ()=> {

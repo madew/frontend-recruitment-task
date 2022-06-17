@@ -132,7 +132,6 @@
 }
 
 .popup {
-  display: none;
   height: 100vh;
   width: 100%;
   position: fixed;
@@ -216,5 +215,9 @@ p {
 
 .btn--round {
   border-radius: 32px;
+}
+
+.hide-element {
+  display: none;
 }
 /*# sourceMappingURL=main.css.map */
