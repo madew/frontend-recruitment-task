@@ -57,3 +57,7 @@ popupEl.addEventListener('click', (event)=> {
     isOutside ? closePopup() : null;
 })
 
+window.addEventListener('keydown', (event)=> {
+    event.key === 'Escape' ? closePopup() : null;
+});
+
